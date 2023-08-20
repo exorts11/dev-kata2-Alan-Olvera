@@ -1,8 +1,7 @@
 const days = ["lunes", "martes", "miercoles", "jueves", "sabado"];
 const response = ["Nacido", "Bautizado", "Casado", "Enfermo", "Empeoro", "Murio"];
 let entry = ""
-domingo = false;
-let validEntry = false
+let domingo = false;
 
 while (!domingo){
 
