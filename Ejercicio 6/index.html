@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Empleado del Mes</title>
 </head>
 <body>
     <h1>Empleado del Mes</h1>
     
     <!-- Sección para ingresar datos -->
-    <div>
+    <div class="data-entry">
         <h2>Ingresar Datos</h2>
         <label for="empleado">Seleccionar Empleado:</label>
         <select id="empleado">
@@ -17,19 +18,27 @@
             <option value="Empleado 2">Empleado 2</option>
             <option value="Empleado 3">Empleado 3</option>
         </select><br>
-        <label for="aqua">Aqua:</label>
-        <input type="number" id="aqua"><br>
-        <label for="emocion">Emoción:</label>
-        <input type="number" id="emocion"><br>
-        <label for="alegria">Alegría:</label>
-        <input type="number" id="alegria"><br>
-        <label for="frescura">Frescura:</label>
-        <input type="number" id="frescura"><br>
+        <div class="input-group">
+            <label for="aqua">Aqua:</label>
+            <input type="number" id="aqua" value="0">
+        </div>
+        <div class="input-group">
+            <label for="emocion">Emoción:</label>
+            <input type="number" id="emocion" value="0">
+        </div>
+        <div class="input-group">
+            <label for="alegria">Alegría:</label>
+            <input type="number" id="alegria" value="0">
+        </div>
+        <div class="input-group">
+            <label for="frescura">Frescura:</label>
+            <input type="number" id="frescura" value="0">
+        </div>
         <button id="ingresarDatos">Ingresar Datos</button>
     </div>
 
     <!-- Sección para mostrar datos almacenados -->
-    <div>
+    <div class="data-display">
         <h2>Datos Almacenados</h2>
         <table>
             <thead>
@@ -39,10 +48,35 @@
                     <th>Emoción</th>
                     <th>Alegría</th>
                     <th>Frescura</th>
+                    <th>Ventas Totales</th>
                 </tr>
             </thead>
             <tbody id="datosTabla">
-                <!-- Aquí se mostrarán los datos ingresados -->
+                <!-- Aquí se inicializarán las filas para cada empleado -->
+                <tr>
+                    <td>Empleado 1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0 USD</td>
+                </tr>
+                <tr>
+                    <td>Empleado 2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0 USD</td>
+                </tr>
+                <tr>
+                    <td>Empleado 3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0 USD</td>
+                </tr>
             </tbody>
         </table>
     </div>
