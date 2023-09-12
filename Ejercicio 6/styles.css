@@ -9,12 +9,19 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 /* Estilos para la sección de ingreso de datos */
 .data-entry {
-    margin: 20px;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 75%;
+    max-width: 1000px; /* Ancho máximo de 1000px */
+    
 }
 
 .data-entry h2 {
